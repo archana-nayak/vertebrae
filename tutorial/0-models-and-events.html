@@ -6,6 +6,8 @@
   </head>
   <body>
   <script>
+
+console.log(838)
 /* - MVC ----------------------------------------------------------------------
  * MVC (Model-View-Controller) frameworks divide your application into
  * manageable components to make it easier to organize and comprehend.
@@ -54,7 +56,7 @@ myTweet.set('message', 'Hello, world!');
 /* Using the reference, get the message attribute of the model and display it:
  * http://backbonejs.org/#Model-get */
 
-// window.alert(YOUR CODE HERE);
+window.alert(myTweet.get('message'));
 
 /* - Backbone EVENTS ----------------------------------------------------------
  * Backbone gives us the ability to listen for events on our models,
@@ -83,7 +85,8 @@ myTweet.on('change',
     console.log(e);
 
     // Write code to log the changed attribute:
-    // console.log(YOUR CODE HERE);
+      alert(e.changed.message);
+
   }
 );
 
@@ -97,7 +100,7 @@ myTweet.on('change',
  * and write a one-liner that will make our `change` listener fire: */
 
 // myTweetYOUR CODE HERE;
-
+  myTweet.set('message','hello_Angel') 
 /* Once you have the `change` event firing, move on to rendering! */
   </script>
   </body>
